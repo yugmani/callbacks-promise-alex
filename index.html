@@ -1,1 +1,40 @@
-<div id="app"></div>
+<div id="app">
+  <h1>JavaScript Promises – All You Need to Know to Get Started</h1>
+  <ul>
+    <li>
+    Promises are objects that represent some value. You don't know that value when you create a Promise. You will get this value in the future when a promise is resolved or rejected. 
+    </li>
+    <li>When javaScript Promise is settled, resolved or rejected, it automatically triggers events you can listen to with specific handler methods. </li>
+    <li>The handlers will automatically execute any code you want at the right moment when Promise returns some value. </li>
+    <li>
+    <h3>Creating a Promise</h3>
+    <ol>
+      <li>While creating a Promise, we use Promise constructor using keyword 'new' followed by Promise().
+      </li>
+      <li>The constructor takes one parameter. This parameter is a function called executor. The executor is invoked automatically when you create a Promise.</li>
+      <li>The executor function takes two parameters, both of which are callbacks. These parameters are resolve and reject.</li>
+      <li>When Promise is resolved the resolve callback is invoked. This is when the job a Promise is supposed to do is successful. When it is not, when there is some error, Promise is rejected and the reject callback is invoked.</li>
+      <li style="background-color:lightgray">
+      <code>// Promise syntax example<br>
+      const myPromise = new Promise(function(resolve, reject) {<br>
+      &emsp; // ... some code<br>
+      })
+      </code>
+      </li>
+      <li style="background-color:lightgray; margin-top:5px;">
+      <code>
+      // Promise syntax example using an arrow function<br>
+      const myPromise = new Promise((resolve, reject) => {<br>
+      &emsp; // ... some code<br>
+      })      
+      </code>
+      </li>
+    </ol>
+    </li>
+    <li></li>
+  </ul>
+
+  <a href=https://blog.alexdevero.com/javascript-promises/"
+    >Callbacks to Promises by Alex Devero</a
+  >
+</div>
