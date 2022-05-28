@@ -53,9 +53,17 @@
     <h3>Handling JavaScript Promises with Handler Functions</h3>
     <ol>
       <li>Handling a Promise is working with the data returned by a Promise, data passed into resolve and reject callbacks.</li>
-      <li>The then(), catch() and finally() are handler functions we can attach to a Promise.</li>
+      <li>The <code>then()</code>, <code>catch()</code> and <code>finally()</code> are handler functions we can attach to a Promise.</li>
       <li>When you invoke a Promise and the promise is settled (resolved or rejected) one of these handlers will be automatically invoked. The Promise returns data and it is passsed into the handlers. The handlers are like messengers that transport the message from Promise further down the chain. For example: adding logic for updating an app with the data received from API into these handlers.</li>
-      <li></li>
+      <li>        
+        <h3>The <code>then()</code> handler function</h3>
+        <ol>
+          <li>This handler is usually used to handle fulfilled state of JavaScript Promises. </li>
+          <li>When the Promise is settled(resolved or rejected) the data will be passed to the then() handler.</li>
+          <li>These data are the data passed into the resolve() handler inside the Promise. </li>
+          <li>To access this data, we need to pass a callback function to the then() handler. This callback function should accept one parameter. Any data returned by the Promise(resolved) will then be available through this parameter.</li>
+        </ol>
+      </li>
       <li></li>
     </ol>
 

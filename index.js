@@ -41,3 +41,27 @@ function myPromiseFunction() {
 console.log(myPromiseFunction());
 //Promise {}
 
+// *****************************************************
+// Handling JavaScript Promises with handler functions
+// *****************************************************
+
+//create a Promise
+const newPromise = new Promise((resolve, reject) => {
+  //fake a delay
+  setTimeout(function () {
+    //resolve the promise with a simple message
+    resolve('Promise has been resolved!');
+  }, 1000);
+});
+
+//Invoke the newPromise and attach then() handler
+//Pass a callback function to the then() handler
+//Make that callback function accept one parameter
+newPromise.then((receivedData) => {
+  //log the data received by Promise
+  console.log(receivedData);
+});
+
+
+// output
+// Promise has been resolved!
