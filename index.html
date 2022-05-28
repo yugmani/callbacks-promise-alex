@@ -40,6 +40,26 @@
 </ol>
 
     </li>
+    <li>
+      <h3>Four States of JavaScript Promises</h3>
+      <ol>
+        <li>First State: <strong>Pending</strong> - Thisis the initial state when you create a Promise and invoke it. This state says that the Promise is neither fulfilled(resolved) nor rejected.</li>
+        <li>Second State: <strong>Fulfilled</strong> - This is the state that Promise is successfully resolved.</li>
+        <li>Third State: <strong>Rejected</strong> - This is the state when there is some problem that is preventing the Promise from being successfully fulfilled(resolved).</li>
+        <li>Fourth State: <strong>Settled</strong> - This is the last state of the Promise when the job of the Promise is finished and the Promise is either fulfilled or rejected.</li>
+      </ol>    
+    </li>
+    <li>
+    <h3>Handling JavaScript Promises with Handler Functions</h3>
+    <ol>
+      <li>Handling a Promise is working with the data returned by a Promise, data passed into resolve and reject callbacks.</li>
+      <li>The then(), catch() and finally() are handler functions we can attach to a Promise.</li>
+      <li>When you invoke a Promise and the promise is settled (resolved or rejected) one of these handlers will be automatically invoked. The Promise returns data and it is passsed into the handlers. The handlers are like messengers that transport the message from Promise further down the chain. For example: adding logic for updating an app with the data received from API into these handlers.</li>
+      <li></li>
+      <li></li>
+    </ol>
+
+    </li>
   </ul>
 
   <a href=https://blog.alexdevero.com/javascript-promises/"
